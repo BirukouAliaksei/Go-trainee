@@ -15,11 +15,11 @@ func Sqrt(x float64) (float64, error) {
 	if x < 0 {
 		return 0, ErrNegativeSqrt(x)
 	}
-	z := 1.0
+
 	for i := 0; i < 10; i++ {
 		fmt.Println(math.Sqrt(x))
 	}
-	return z, nil
+	return x, nil
 }
 
 func main() {
